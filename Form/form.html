@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Form</title>
+</head>
+<body>
+
+  <h1>Tell Us About Yourself</h1>
+
+  <form method="GET" action="ola.php">
+
+    
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    
+    <fieldset>
+      <legend>Age:</legend>
+      <label><input type="radio" name="age" value="under18"> &lt;18</label><br>
+      <label><input type="radio" name="age" value="19-35"> 19-35</label><br>
+      <label><input type="radio" name="age" value="36-48"> 36-48</label><br>
+      <label><input type="radio" name="age" value="over49"> &gt;49</label>
+    </fieldset><br>
+
+    <label for="profession">Profession:</label><br>
+    <input type="text" id="profession" name="profession" list="profession-suggestions">
+    <datalist id="profession-suggestions">
+      <option value="Engineer">
+      <option value="Doctor">
+      <option value="Teacher">
+      <option value="Designer">
+      <option value="Lawyer">
+      <option value="Student">
+      <option value="Other">
+    </datalist><br><br>
+
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">-- Select a country --</option>
+      <option value="pt">Portugal</option>
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="fr">France</option>
+      <option value="de">Germany</option>
+      <option value="br">Brazil</option>
+      <option value="jp">Japan</option>
+    </select><br><br>
+
+    <fieldset>
+      <legend>Interests:</legend>
+      <label><input type="checkbox" name="interests" value="technology"> Technology</label><br>
+      <label><input type="checkbox" name="interests" value="sports"> Sports</label><br>
+      <label><input type="checkbox" name="interests" value="music"> Music</label><br>
+      <label><input type="checkbox" name="interests" value="travel"> Travel</label><br>
+      <label><input type="checkbox" name="interests" value="food"> Food</label><br>
+      <label><input type="checkbox" name="interests" value="art"> Art</label>
+    </fieldset><br>
+
+    <label for="how">How did you find out about us?</label><br>
+    <textarea id="how" name="how" rows="5" cols="40" placeholder="Tell us how you found the site..."></textarea><br><br>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
