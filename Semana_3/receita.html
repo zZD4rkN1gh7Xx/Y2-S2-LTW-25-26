@@ -3,19 +3,24 @@
   <head>
     <title>Recipes</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="receita.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Sigmar&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Ruda:wght@400..900&family=Sigmar&display=swap');
+    </style>
   </head>
   <body>
         <h1>Recipes</h1>
         <main>
             <header>
                 <h2>Francesinha</h2>
-                <div>
-                    <ul>
-                        <li>Prep Time <br> 30 min</li>
-                        <li>Cook Time <br> 35 min</li>
-                        <li>Total Time <br> 65 min</li>
-                        <li>Servings <br> 4 servings</li>
-                    </ul>
+                <div class="description">
+                    <dl>
+                        <dt>Prep Time </dt> <dd>30 min</dd>
+                        <dt>Cook Time </dt> <dd>35 min</dd>
+                        <dt>Total Time </dt> <dd>65 min</dd>
+                        <dt>Servings </dt> <dd>4 servings</dd>
+                    </dl>
                 </div>
             </header>
             <section>
@@ -31,47 +36,47 @@
                     It's not an everyday dish, but it's worth trying at least once in your life. If you visit Porto, make sure to try a francesinha.
                 </p>
             </section>
-            <section>
+            <section class="ingredients">
                 <h2>Ingredients</h2>
                 <p>For the sauce:</p>
                 <ul>
-                    <li>olive oil as needed</li>
-                    <li>1 sliced onion</li>
-                    <li>2 garlic cloves</li>
-                    <li>1 bay leaf</li>
-                    <li>1 slice of ham</li>
-                    <li>1 can of diced tomatoes</li>
-                    <li>1/2 liter of beer</li>
-                    <li>1/2 liter of white wine</li>
-                    <li>1/2 liter of water</li>
-                    <li>1 beef bouillon cube</li>
-                    <li>salt as needed</li>
-                    <li>Worcestershire sauce as needed</li>
-                    <li>1 tsp of cornstarch</li>
-                    <li>1/4 cup of milk</li>
+                    <li><span class="highlighted">olive oil</span> as needed</li>
+                    <li>1 sliced <span class="highlighted">onion</span></li>
+                    <li>2 <span class="highlighted">garlic</span> cloves</li>
+                    <li>1 <span class="highlighted">bay leaf</span></li>
+                    <li>1 slice of <span class="highlighted">ham</span></li>
+                    <li>1 can of diced <span class="highlighted">tomatoes</span></li>
+                    <li>1/2 liter of <span class="highlighted">beer</span></li>
+                    <li>1/2 liter of <span class="highlighted">white wine</span></li>
+                    <li>1/2 liter of <span class="highlighted">water</span></li>
+                    <li>1 <span class="highlighted">beef bouillon cube</span></li>
+                    <li><span class="highlighted">salt</span> as needed</li>
+                    <li><span class="highlighted">Worcestershire sauce</span> as needed</li>
+                    <li>1 tsp of <span class="highlighted">cornstarch</span></li>
+                    <li>1/4 cup of <span class="highlighted">milk</span></li>
                 </ul>
-                <p>For the sandwich</p>
+                <p>For the sandwich:</p>
                 <ul>
-                    <li>4 beef tenderloin steaks</li>
-                    <li>4 fresh sausages</li>
-                    <li>4 linguiça sausages</li>
-                    <li>8 slices of crustless sandwich bread</li>
-                    <li>16 slices od cheese</li>
-                    <li>8 slices of ham</li>
+                    <li>4 <span class="highlighted">beef tenderloin steaks</span></li>
+                    <li>4 <span class="highlighted">fresh sausages</span></li>
+                    <li>4 <span class="highlighted">linguiça sausages</span></li>
+                    <li>8 slices of <span class="highlighted">crustless sandwich bread</span></li>
+                    <li>16 slices of <span class="highlighted">cheese</span></li>
+                    <li>8 slices of <span class="highlighted">ham</span></li>
                 </ul>
             </section>
-            <section>
+            <section class="method">
                 <h2>Method</h2>
                 <ol>
-                    <li>In olive oil, sauté the onion. As soon as it is translucent, add the garlic.</li>
-                    <li>Let it sauté for a little while, then add the bay leaf, ham, and tomato.</li>
-                    <li>Mix well and add beer, wine, and water.</li>
-                    <li>Season with bouillon stock, salt, and Worcestershire sauce and let it simmer on low heat for about half an hour.</li>
-                    <li>Remove the bay leaf and puree the sauce until it becomes very smooth.</li>
-                    <li>Dissolve the cornstarch in the milk and add it to the sauce, stirring and letting it cook for a little while.</li>
+                    <li>In <span class="highlighted">olive oil</span>, sauté the <span class="highlighted">onion</span>. As soon as it is translucent, add the <span class="highlighted">garlic</span>.</li>
+                    <li>Let it sauté for a little while, then add the <span class="highlighted">bay leaf</span>, <span class="highlighted">ham</span>, and <span class="highlighted">tomato</span>.</li>
+                    <li>Mix well and add <span class="highlighted">beer</span>, <span class="highlighted">wine</span>, and <span class="highlighted">water</span>.</li>
+                    <li>Season with <span class="highlighted">bouillon stock</span>, <span class="highlighted">salt</span>, and <span class="highlighted">Worcestershire sauce</span> and let it simmer on low heat for about half an hour.</li>
+                    <li>Remove the <span class="highlighted">bay leaf</span> and puree the sauce until it becomes very smooth.</li>
+                    <li>Dissolve the <span class="highlighted">cornstarch</span> in the <span class="highlighted">milk</span> and add it to the sauce, stirring and letting it cook for a little while.</li>
                     <li>Preheat the oven to 180ºC.</li>
-                    <li>Meanwhile, grill the steaks, previously seasoned with salt and pepper, sausages, and linguica, cut in half lengthwise.</li>
-                    <li>In an oven tray, place 4 slices of sandwich bread, and on top of it, place the steak, sausages, and ham. Cover with another slice of sandwich bread. Cover with 4 slices of cheese. Place the tray in the oven until the cheese is melted.</li>
+                    <li>Meanwhile, grill the <span class="highlighted">steaks</span>, previously seasoned with <span class="highlighted">salt</span> and <span class="highlighted">pepper</span>, <span class="highlighted">sausages</span>, and <span class="highlighted">linguica</span>, cut in half lengthwise.</li>
+                    <li>In an oven tray, place 4 slices of <span class="highlighted">sandwich bread</span>, and on top of it, place the <span class="highlighted">steak</span>, <span class="highlighted">sausages</span>, and <span class="highlighted">ham</span>. Cover with another slice of <span class="highlighted">sandwich bread</span>. Cover with 4 slices of <span class="highlighted">cheese</span>. Place the tray in the oven until the <span class="highlighted">cheese</span> is melted.</li>
                     <li>Remove from the oven, place each francesinha on a plate, and pour the hot sauce over it.</li>
                 </ol>
             </section>

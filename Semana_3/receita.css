@@ -1,0 +1,85 @@
+h1 
+{
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 80px;
+}
+
+h2
+{
+    font-family: "Ruda", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align:right;
+    font-size: 35px;
+    border-bottom: 2px solid black;
+}
+
+main{
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    line-height: 1.5;
+}
+
+.description{
+    text-transform: capitalize;
+    background-color:lightpink;
+    opacity: 0.5;
+    border-top: 2px dashed coral;
+    border-left: 2px dashed coral;
+    border-bottom: 2px dashed coral;
+    border-right: 7px solid coral;
+    border-radius: 10px 0px 0px 10px;
+}
+
+dl{
+    margin: 10px 10px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+dd {
+    margin-left: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients p {
+    font-weight: bold;
+}
+
+.ingredients ul {
+    padding: 0;
+    margin: 0px 20px;
+}
+
+.ingredients li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.method ol {
+    padding: 0;
+    margin: 0px 20px;
+}
+
+.method li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.highlighted{
+    color:cadetblue;
+}
