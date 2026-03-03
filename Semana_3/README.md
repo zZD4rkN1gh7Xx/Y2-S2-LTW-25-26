@@ -14,7 +14,7 @@ Using HTML5 only, recreate the structure of a recipe website mockup.
 - Use `<ul>` for ingredients and `<ol>` for the method steps
 - Use `<figure>` and `<figcaption>` for the recipe image
 
-![alt text](/Y2-S2-LTW-25-26/Semana_3/semana_3_inicio.png)
+![alt text](/Semana_3/semana_3_inicio.png)
 
 ---
 
@@ -39,4 +39,4 @@ Using CSS3, recreate the design of the mockup.
 - `:not(:last-child)` on `li` to add spacing between list items without affecting the last one
 - `.highlighted` class with `color: cadetblue` applied via `<span>` to color specific words in the method steps
 
-![alt text](/Y2-S2-LTW-25-26/Semana_3/semana_3_done.png)
+![alt text](/Semana_3/semana_3_done.png)
