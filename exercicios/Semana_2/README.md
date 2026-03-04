@@ -1,6 +1,6 @@
-# 📄 Week 02 — HTML Exercises
+#  Week 02 — HTML Exercises
 
-## 📋 Overview
+##  Overview
 
 This week's exercises focus exclusively on **HTML5** — semantic markup, document structure, tables, forms, and accessibility. No CSS or JavaScript yet; the goal is to master the structure layer of the web.
 
@@ -39,8 +39,8 @@ Build a multi-page prototype of an online newspaper using only HTML5.
 - `<form>` with `<input>`, `<textarea>` for the comment form
 - `&copy;` character entity for the copyright symbol
 
-![alt text](/Y2-S2-LTW-25-26/exercicios/Semana_2//HTML_exercices/AllPrint.png)
-![alt text](/Y2-S2-LTW-25-26/exercicios/Semana_2//HTML_exercices/article_print.png)
+![alt text](/exercicios/Semana_2//HTML_exercices/AllPrint.png)
+![alt text](/exercicios/Semana_2//HTML_exercices/article_print.png)
 ---
 
 ### 2. Complex Table
@@ -53,7 +53,7 @@ Recreate a complex table using `colspan` and `rowspan` to merge cells across row
 - `colspan` and `rowspan` attributes
 - HTML5 badge embedded in the page
 
-![alt text](/Y2-S2-LTW-25-26/exercicios/Semana_2/Complex_table/table_print.png)
+![alt text](/exercicios/Semana_2/Complex_table/table_print.png)
 
 ---
 
@@ -79,7 +79,7 @@ Create a user input form with multiple field types, validation, and accessibilit
 - `<button type="submit">` for submission
 - Tested with both `method="GET"` and `method="POST"`
 
-![alt text](/Y2-S2-LTW-25-26/exercicios/Semana_2/Form/Screenshot%202026-03-04%20152919.png)
+![alt text](/exercicios/Semana_2/Form/Screenshot%202026-03-04%20152919.png)
 
 ---
 
