@@ -1,0 +1,17 @@
+header {
+    background-color: #046DD5;
+}
+
+h1,h2{
+    color: white;
+}
+
+#signup
+{
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
