@@ -1,4 +1,4 @@
-# 🌐 LTW — Linguagens e Tecnologias Web
+# LTW — Linguagens e Tecnologias Web
 
 ## Course Info
 
@@ -12,7 +12,7 @@
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 Y2-S2-LTW-25-26/
