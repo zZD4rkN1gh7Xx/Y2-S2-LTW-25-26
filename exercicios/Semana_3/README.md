@@ -41,3 +41,7 @@ Using CSS3, recreate the design of the mockup.
 - `.highlighted` class with `color: cadetblue` applied via `<span>` to color specific words in the method steps
 
 ![alt text](/exercicios/Semana_3/semana_3_done.png)
+
+---
+
+*Back to [course root](../../README.md)*
