@@ -7,7 +7,6 @@ h1,h2{
     color: white;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    
 }
 
 h1{
@@ -32,6 +31,14 @@ header h2{
 header #signup :nth-child(2)
 {
     padding-left: 10px;
+}
+
+header a 
+{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
 }
 
 
@@ -125,9 +132,51 @@ p{
     opacity: 0.7;
 }
 
+#news header 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    gap: 5px;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#news header h1 a {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+img {
+    margin: 20px 0px;
+    width: 100%;
+    height: auto;
+}
+
+#news article{
+    position: relative;
+}
+
+#news p
+{
+    margin: 15px 15px;
+}
+
+#news p:first-of-type::first-letter {
+  font-size: 2em;
+  font-weight:500;
+  float: left;
+  line-height: 1;
+  margin-right: 4px;
+}
+
 section footer
 {
-    background-color: #F4655F;
+    background-color: #F4655F; 
     font-size: 12px;
     padding: 10px;
 }
