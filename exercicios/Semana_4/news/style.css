@@ -1,9 +1,27 @@
 header {
     background-color: #046DD5;
+    padding: 15px 15px;
 }
 
 h1,h2{
     color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    
+}
+
+h1{
+    font-weight: 500;
+    margin: 0;
+   
+}
+
+header h2{
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    
 }
 
 #signup
@@ -11,7 +29,120 @@ h1,h2{
     color: white;
 }
 
+header #signup :nth-child(2)
+{
+    padding-left: 10px;
+}
+
+
+header #signup :nth-child(1)
+{
+    border-right: thin solid white;
+    padding-right: 10px;
+}
+
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#hamburger
+{
+    display: none;
+}
+
+#menu ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    list-style: none;
+    text-align: center;
+    padding: 12px 0; 
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size:14px;
+
+}
+
+#menu li:nth-child(1) {
+    border-top: 5px solid #E1493E;
+    padding-top: 12px; 
+}
+
+#menu li:nth-child(2) {
+    border-top: 5px solid #8ABA56;
+    padding-top: 12px; 
+}
+
+#menu li:nth-child(3) {
+    border-top: 5px solid #5B4282;
+    padding-top: 12px; 
+}
+
+
+#menu li:nth-child(4) {
+    border-top: 5px solid #FF8932;
+    padding-top: 12px; 
+}
+
+#menu li:nth-child(5) {
+    border-top: 5px solid #19B6E9;
+    padding-top: 12px; 
+}
+
+#menu li:nth-child(6) {
+    border-top: 5px solid #E84C8B;
+    padding-top: 12px; 
+}
+
+#related
+{
+    background-color: #2A2F33;
+    padding: 20px 20px;
+    color: white;
+}
+
+#related h1
+{
+    font-size: 18px;
+}
+
+#related p
+{
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+section footer
+{
+    background-color: #F4655F;
+    font-size: 12px;
+    padding: 10px;
+}
+
+section footer a
+{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+footer
+{
+    background-color: #2A2F33;
+    padding: 3px;
+    margin: 5px 0px;
+    color: white;
 }
