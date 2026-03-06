@@ -11,6 +11,15 @@
 
 .comment .user{
     font-style: italic;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.comment .user::after{
+    content: " said: ";
+    font-style: italic;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
 }
 
 .comment .date{
@@ -20,4 +29,67 @@
 
 .comment p{
     background-color: #EDEFF0 ;
+}
+
+.comment p::before {
+    content: "\201C";
+    font-size: 1em;
+    line-height: 0;
+    margin-top: -3px;
+    color: #999;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    background-color: #EDEFF0;
+    font-family: "Poppins", sans-serif;
+}
+
+form h2{
+    color: black;
+    font-weight: 700;
+    font-size: medium;
+}
+
+
+form h2 {
+    grid-column: 1 / -1;
+}
+
+form label:last-of-type {
+    grid-column: 1 / -1; 
+}
+
+form button {
+    grid-column: 2;
+    justify-self: end;
+}
+
+form label input, form label textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form label:last-of-type textarea {
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+form button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
 }

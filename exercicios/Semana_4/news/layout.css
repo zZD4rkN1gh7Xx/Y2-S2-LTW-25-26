@@ -23,9 +23,10 @@ header
 
 header #signup {
     position: absolute;
-    top: 80px;
-    right: 30px;
+    top: 7dvh; 
+    right: 3.5%;
 }
+
 #menu{
     grid-area: menu;
     width: 100%;
