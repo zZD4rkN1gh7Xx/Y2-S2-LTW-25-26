@@ -1,0 +1,14 @@
+@media (max-width: 60em) {
+    body {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                             "menu"
+                             "content"
+                             "footer";
+    }
+
+    #related {
+        display: none;
+    }
+}
