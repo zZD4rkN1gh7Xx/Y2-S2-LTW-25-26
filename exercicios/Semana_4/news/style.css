@@ -70,6 +70,7 @@ p{
 {
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 #menu li {
@@ -118,7 +119,6 @@ p{
 {
     background-color: #2A2F33;
     padding: 20px 20px;
-    color: white;
 }
 
 #related h1
@@ -130,6 +130,7 @@ p{
 {
     font-size: 13px;
     opacity: 0.7;
+    color: white;
 }
 
 #news header 
@@ -144,6 +145,11 @@ p{
     z-index: 1;
 }
 
+#news article{
+    background-color: white;
+    margin: 10px 0;
+}
+
 #news header h1 a {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
     font-weight: 600;
@@ -152,7 +158,6 @@ p{
 }
 
 img {
-    margin: 20px 0px;
     width: 100%;
     height: auto;
 }
@@ -187,11 +192,15 @@ section footer a
     text-underline-offset: 4px;
 }
 
+#news a:hover{
+    background-color:#2A2F33;
+    color: white;
+}
 
 footer
 {
     background-color: #2A2F33;
     padding: 3px;
-    margin: 5px 0px;
+    
     color: white;
 }
