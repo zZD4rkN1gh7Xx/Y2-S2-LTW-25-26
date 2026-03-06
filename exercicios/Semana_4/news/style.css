@@ -168,7 +168,7 @@ img {
 
 #news p
 {
-    margin: 15px 15px;
+    padding: 15px;
 }
 
 #news p:first-of-type::first-letter {

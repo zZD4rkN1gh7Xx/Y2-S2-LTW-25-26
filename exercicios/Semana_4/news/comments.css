@@ -1,0 +1,23 @@
+#comments h1{
+    color:black;
+    font-size:large;
+    font-weight: 700;
+}
+
+#comments{
+    margin: 15px;
+    position: relative;
+}
+
+.comment .user{
+    font-style: italic;
+}
+
+.comment .date{
+    position: absolute;
+    right: 0;
+}
+
+.comment p{
+    background-color: #EDEFF0 ;
+}
