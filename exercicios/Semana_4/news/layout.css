@@ -56,3 +56,12 @@ footer
 {
     grid-area: footer;
 }
+
+section footer {
+    display: flex;
+    align-items: center;
+}
+
+section footer .author {
+    margin-right: auto;
+}
