@@ -1,0 +1,20 @@
+body {
+  position: relative;
+}
+
+aside {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 74.5%;
+  
+}
+
+main {
+  float: left;
+  width: 60%;
+}
+
+footer {
+  clear: left;
+}
