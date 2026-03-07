@@ -30,7 +30,7 @@ footer {
 
 */
 
-
+/*
 body {
   position: relative;
 }
@@ -56,4 +56,33 @@ main {
 
 footer {
   clear: left;
+}
+
+*/
+
+body {
+  position: relative;
+}
+
+header,nav{
+  width: 60%;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 11.1%;
+  
+}
+
+main {
+  margin-top: 70px; /* push main down */
+}
+
+footer {
+  position: absolute;
+  top: 13%; /* adjust footer down by the same amount */
+  width: 96.7%;
 }
