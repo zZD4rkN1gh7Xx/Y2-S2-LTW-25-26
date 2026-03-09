@@ -139,5 +139,88 @@ textarea {
 }
 
 #register:hover {
-  background-color: var(--color-button-hover);
+    background-color: var(--color-button-hover);
+}
+
+
+@media (max-width: 640px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #fname {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #lname {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #username {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    #email {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+
+    #password {
+        grid-column: 1 / -1;
+        grid-row: 4;
+    }
+
+    #address {
+        grid-column: 1 / -1;
+        grid-row: 5;
+    }
+
+    #country {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #city {
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    #zipcode {
+        grid-column: 1 / -1;
+        grid-row: 7;
+    }
+
+    #bio {
+        grid-column: 1 / -1;
+        grid-row: 8;
+    }
+
+    #register {
+        grid-column: 1 / -1;
+        grid-row: 9;
+    }
+}
+
+@media (max-width: 400px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    #fname,
+    #lname,
+    #username,
+    #email,
+    #password,
+    #address,
+    #country,
+    #city,
+    #zipcode,
+    #bio,
+    #register {
+        grid-column: 1;
+        grid-row: auto;
+    }
 }
