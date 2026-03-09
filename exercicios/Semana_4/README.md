@@ -81,6 +81,9 @@ Two breakpoints to adapt the layout to smaller screens.
 - CSS `transition` on height for smooth menu animation
 
 
+https://github.com/user-attachments/assets/95848ab5-45a0-4662-8347-ef3e71df57f4
+
+
 ---
 
 #### 1.4 Comments Design (`comments.css`)
