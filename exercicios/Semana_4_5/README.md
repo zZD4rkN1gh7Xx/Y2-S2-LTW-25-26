@@ -45,7 +45,7 @@ Style the main components.
 - Pseudo-class `:hover` to change background and text color on nav links
 - `display: none` to hide the hamburger menu checkbox and label
 
-![alt text](/exercicios/Semana_4/screenshots/main_style_done.png)
+![alt text](/exercicios/Semana_4_5/screenshots/main_style_done.png)
 
 ---
 
