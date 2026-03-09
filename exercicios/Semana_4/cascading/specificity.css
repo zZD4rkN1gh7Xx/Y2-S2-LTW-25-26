@@ -1,0 +1,42 @@
+section ul li               { color : green }    /*R1*/
+.bar .second                { color : red }      /*R2*/
+li a                        { color : cyan }     /*R3*/
+section li:first-child ~ li { color : yellow }   /*R4*/
+#foo .bar li :first-child   { color : inherit }  /*R5*/
+.bar li                     { color : magenta }  /*R6*/
+body{
+    background-color: black;
+}
+
+/*
+3.1 - Specificity
+
+R1 -> (0,0,3)
+R2 -> (0,2,0)
+R3 -> (0,0,2)
+R4 -> (0,1,3)
+R5 -> (1,2,1)
+R6 -> (0,1,1)
+*/
+
+
+/*
+3.2 -> Rules
+
+What rules apply to each of the elements:
+
+section with id foo             : No rules target section -> only used as ancestor (no color applied)
+ul with class bar               : ul is never a target -> no color applied
+each one of the four list items : li is matched multiple times -> higher specificity wins therefore:    
+                                li.first (1st)R1(0,0,3), R6(0,1,1)R4 → magenta
+                                li.second (2nd)R1(0,0,3), R2(0,2,0)*, R4(0,1,3), R6(0,1,1)R2 → red
+                                li (3rd)R1(0,0,3), R4(0,1,3), R6(0,1,1)R4 → yellow
+                                li (4th)R1(0,0,3), R4(0,1,3), R6(0,1,1)R4 → yellow
+
+each one of the four links      : only R3 and R5 are relevant
+                                <a> in li #1R3(0,0,2), R5(1,2,2)  == R5 → inherit (gets li's color = magenta)
+                                <a> in li #2R3(0,0,2), R5(1,2,2)  == R5 → inherit (gets li's color = red)
+                                <a> in li #3R3(0,0,2), R5(1,2,2)  == R5 → inherit (gets li's color = yellow)
+                                <a> in li #4R3(0,0,2), R5(1,2,2)  == R5 → inherit (gets li's color = yellow)
+
+*/
