@@ -59,7 +59,7 @@ Position all elements into their correct places on the page.
 - Page width fixed at `60em`
 - Sidebar occupying `1/5` of total width
 
-![alt text](/exercicios/Semana_4/screenshots/positioning_done.png)
+![alt text](/exercicios/Semana_4_5/screenshots/positioning_done.png)
 
 ---
 
@@ -94,7 +94,7 @@ Style the comments section on `item.html`.
 - CSS Grid for the comment form layout
 - `::before` pseudo-element with `\201C` (`"`) as a decorative quote character per comment
 
-![alt text](/exercicios/Semana_4/screenshots/comments_done.png)
+![alt text](/exercicios/Semana_4_5/screenshots/comments_done.png)
 
 ---
 
@@ -107,7 +107,7 @@ Style the register and login forms on `register.html` and `login.html`.
 - Generic selectors to avoid rule repetition
 - Responsive adjustments so the form fills the content area on small screens
 
-![alt text](/exercicios/Semana_4/screenshots/login-register_done.png)
+![alt text](/exercicios/Semana_4_5/screenshots/login-register_done.png)
 
 ---
 
@@ -123,9 +123,9 @@ Recreate four different layouts using only classic CSS positioning — no flexbo
 
 | Style | Image |
 |---|---|
-| Style 1 | ![alt text](/exercicios/Semana_4/screenshots/ex2-1_done.png) |
-| Style 2 | ![alt text](/exercicios/Semana_4/screenshots/ex2-2_done.png) |
-| Style 3 | ![alt text](/exercicios/Semana_4/screenshots/ex2-3_done.png) |
+| Style 1 | ![alt text](/exercicios/Semana_4_5/screenshots/ex2-1_done.png) |
+| Style 2 | ![alt text](/exercicios/Semana_4_5/screenshots/ex2-2_done.png) |
+| Style 3 | ![alt text](/exercicios/Semana_4_5/screenshots/ex2-3_done.png) |
 
 
 ---
@@ -157,7 +157,7 @@ Analyse CSS rule resolution, specificity, and inheritance on a fixed HTML snippe
 | R5 | `#foo .bar li :first-child` | 1-2-1 |
 | R6 | `.bar li` | 0-1-1 |
 
-![alt text](/exercicios/Semana_4/screenshots/cascading_done.png)
+![alt text](/exercicios/Semana_4_5/screenshots/cascading_done.png)
 
 ---
 
@@ -187,7 +187,7 @@ Apply CSS to a registration form using grid layout and CSS custom properties.
 - CSS custom properties (`--var`) for all colors
 - `:invalid` pseudo-class to apply error styling to invalid inputs
 
-![alt text](/exercicios/Semana_4/screenshots/form_style_done.png)
+![alt text](/exercicios/Semana_4_5/screenshots/form_style_done.png)
 
 #### 4.2 Responsive Form Design (`responsive.css`)
 
@@ -195,7 +195,7 @@ Apply CSS to a registration form using grid layout and CSS custom properties.
 - `@media` query to reflow the grid into a single-column layout on smaller screens
 - Form expands to fill the full content area width on mobile
 
-![alt text](/exercicios/Semana_4/screenshots/form_responsive_done.png)
+![alt text](/exercicios/Semana_4_5/screenshots/form_responsive_done.png)
 
 ---
 
