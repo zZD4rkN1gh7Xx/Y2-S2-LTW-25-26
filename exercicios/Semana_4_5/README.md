@@ -8,12 +8,12 @@ These weeks' exercises focus exclusively on **CSS**: styling, layout, responsive
 
 ## Exercises
 
-| # | Title | Key Concepts | Status |
-|---|---|---|---|
-| 1 | Online Newspaper | Selectors, flexbox, grid, media queries, transitions | ✅ Done |
-| 2 | No Flexbox/Grid Design | Float, position, clear | ✅ Done |
-| 3 | Cascading | Specificity, inheritance, rule resolution | ✅ Done |
-| 4 | Form Design | Grid layout, CSS variables, pseudo-classes | ✅ Done |
+| # | Title | Key Concepts |
+|---|---|---|
+| 1 | Online Newspaper | Selectors, flexbox, grid, media queries, transitions | |
+| 2 | No Flexbox/Grid Design | Float, position, clear | 
+| 3 | Cascading | Specificity, inheritance, rule resolution | 
+| 4 | Form Design | Grid layout, CSS variables, pseudo-classes | 
 
 ---
 
