@@ -153,7 +153,7 @@ Analyse CSS rule resolution, specificity, and inheritance on a fixed HTML snippe
 | R1 | `section ul li` | 0-0-3 |
 | R2 | `.bar .second` | 0-2-0 |
 | R3 | `li a` | 0-0-2 |
-| R4 | `section li:first-child ~ li` | 0-1-2 |
+| R4 | `section li:first-child ~ li` | 0-1-3 |
 | R5 | `#foo .bar li :first-child` | 1-2-1 |
 | R6 | `.bar li` | 0-1-1 |
 
