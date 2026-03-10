@@ -1,4 +1,4 @@
-# HTML / CSS Exercises
+# Week 03 # HTML / CSS Exercises
 
 ## 1. HTML
 
