@@ -63,6 +63,10 @@ Create a PHP script that reads GET parameters and performs arithmetic, plus an H
 
 **Test URL:** `http://localhost:9000/sum2.php?num1=2&num2=5`
 
+
+https://github.com/user-attachments/assets/9bcee1a5-5dfb-4395-9680-6a1b3ca92c7e
+
+
 ---
 
 ### 2. SQLite Database Creation
