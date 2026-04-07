@@ -22,7 +22,6 @@
     </div>
   </header>
   <nav id="menu">
-    <!-- just for the hamburguer menu in responsive layout -->
     <input type="checkbox" id="hamburger">
     <label class="hamburger" for="hamburger"></label>
 
@@ -63,23 +62,23 @@
       $date = date('F j', $article['published']);
       $tags = explode(',', $article['tags']);
     ?>
-    <article>
-      <header>
-        <h1><a href="article.php?id=<?php echo $article['id']; ?>"><?php echo htmlspecialchars($article['title']); ?></a></h1>
-      </header>
-      <img src="<?php echo !empty($article['image']) ? htmlspecialchars($article['image']) : 'https://picsum.photos/600/300?random=' . $article['id']; ?>" alt="">
-      <p><?php echo htmlspecialchars($article['introduction']); ?></p>
-      <footer>
-        <span class="author"><?php echo htmlspecialchars($article['name']); ?></span>
-        <span class="tags">
-          <?php foreach ($tags as $tag): ?>
-            <a href="index.php">#<?php echo htmlspecialchars(trim($tag)); ?></a>
-          <?php endforeach; ?>
-        </span>
-        <span class="date"><?php echo $date; ?></span>
-        <a class="comments" href="article.php?id=<?php echo $article['id']; ?>#comments"><?php echo $article['comments']; ?></a>
-      </footer>
-    </article>
+      <article>
+        <header>
+          <h1><a href="article.php?id=<?php echo $article['id']; ?>"><?php echo htmlspecialchars($article['title']); ?></a></h1>
+        </header>
+        <img src="<?php echo !empty($article['image']) ? htmlspecialchars($article['image']) : 'https://picsum.photos/600/300?random=' . $article['id']; ?>" alt="">
+        <p><?php echo htmlspecialchars($article['introduction']); ?></p>
+        <footer>
+          <span class="author"><?php echo htmlspecialchars($article['name']); ?></span>
+          <span class="tags">
+            <?php foreach ($tags as $tag): ?>
+              <a href="index.php">#<?php echo htmlspecialchars(trim($tag)); ?></a>
+            <?php endforeach; ?>
+          </span>
+          <span class="date"><?php echo $date; ?></span>
+          <a class="comments" href="article.php?id=<?php echo $article['id']; ?>#comments"><?php echo $article['comments']; ?></a>
+        </footer>
+      </article>
     <?php endforeach; ?>
   </section>
   <footer>
