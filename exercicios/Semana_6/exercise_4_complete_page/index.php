@@ -36,25 +36,11 @@
   </nav>
   <aside id="related">
     <?php
-    $db = new PDO('sqlite:news.db');
+      require_once('database/connection.php');
+      require_once('database/news.php');
 
-    $stmt = $db->prepare('
-      SELECT news.*, users.*, COUNT(comments.id) AS comments
-      FROM news JOIN
-           users USING (username) LEFT JOIN
-           comments ON comments.news_id = news.id
-      GROUP BY news.id, users.username
-      ORDER BY published DESC
-    ');
-    $stmt->execute();
-    $articles = $stmt->fetchAll();
-
-    foreach ($articles as $article) {
-      echo '<article>';
-      echo '<h1><a href="article.php?id=' . $article['id'] . '">' . htmlspecialchars($article['title']) . '</a></h1>';
-      echo '<p>' . htmlspecialchars($article['introduction']) . '</p>';
-      echo '</article>';
-    }
+      $db = getDatabaseConnection();
+      $articles = getAllNews($db);
     ?>
   </aside>
   <section id="news">

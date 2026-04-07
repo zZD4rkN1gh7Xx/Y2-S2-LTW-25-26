@@ -38,24 +38,14 @@
     </nav>
 
     <?php
-    $db = new PDO('sqlite:news.db');
+        require_once('database/connection.php');
+        require_once('database/news.php');
+        require_once('database/comments.php');
 
-    $stmt = $db->prepare('SELECT * FROM news JOIN users USING (username) WHERE id = ?');
-    $stmt->execute(array($_GET['id']));
-    $article = $stmt->fetch();
-
-    $stmt = $db->prepare('SELECT * FROM comments LEFT JOIN users USING (username) WHERE news_id = ?');
-    $stmt->execute(array($_GET['id']));
-    $comments = $stmt->fetchAll();
-
-    $stmt2 = $db->prepare('
-    SELECT news.*, COUNT(comments.id) AS comments
-    FROM news LEFT JOIN comments ON comments.news_id = news.id
-    GROUP BY news.id
-    ORDER BY published DESC
-  ');
-    $stmt2->execute();
-    $allArticles = $stmt2->fetchAll();
+        $db = getDatabaseConnection();
+        $article = getNewsById($db, $_GET['id']);
+        $comments = getCommentsByNewsId($db, $_GET['id']);
+        $allArticles = getAllNews($db);
     ?>
 
     <aside id="related">
