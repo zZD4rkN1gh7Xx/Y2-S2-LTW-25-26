@@ -21,8 +21,8 @@ function output_header()
             <h1><a href="index.php">Super Legit News</a></h1>
             <h2><a href="index.php">Where fake news are born!</a></h2>
             <div id="signup">
-                <a href="register.html">Register</a>
-                <a href="login.html">Login</a>
+                <a href="../html/register.html">Register</a>
+                <a href="../html/login.html">Login</a>
             </div>
         </header>
 
