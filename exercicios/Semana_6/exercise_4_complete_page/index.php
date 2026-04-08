@@ -34,15 +34,23 @@
       <li><a href="index.php">Weather</a></li>
     </ul>
   </nav>
-  <aside id="related">
-    <?php
-      require_once('database/connection.php');
-      require_once('database/news.php');
 
-      $db = getDatabaseConnection();
-      $articles = getAllNews($db);
-    ?>
+  <?php
+  require_once('database/connection.php');
+  require_once('database/news.php');
+
+  $db = getDatabaseConnection();
+  $articles = getAllNews($db);
+  ?>
+  <aside id="related">
+    <?php foreach ($articles as $related): ?>
+      <article>
+        <h1><a href="article.php?id=<?php echo $related['id']; ?>"><?php echo htmlspecialchars($related['title']); ?></a></h1>
+        <p><?php echo htmlspecialchars($related['introduction']); ?></p>
+      </article>
+    <?php endforeach; ?>
   </aside>
+
   <section id="news">
     <?php foreach ($articles as $article):
       $date = date('F j', $article['published']);
