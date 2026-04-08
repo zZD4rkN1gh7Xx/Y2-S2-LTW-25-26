@@ -52,6 +52,7 @@
                 <h1><?php echo htmlspecialchars($article['title']); ?></h1>
             </header>
             <img src="<?php echo !empty($article['image']) ? htmlspecialchars($article['image']) : 'https://picsum.photos/600/300?random=' . $article['id']; ?>" alt="">
+            <a href="edit_article.php?id=<?php echo $article['id']; ?>">Edit</a>
             <p><?php echo htmlspecialchars($article['introduction']); ?></p>
             <p><?php echo htmlspecialchars($article['body']); ?></p>
             <?php output_comments($comments); ?>
@@ -68,3 +69,4 @@
         </article>
     </section>
 <?php } ?>
+

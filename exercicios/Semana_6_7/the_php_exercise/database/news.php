@@ -17,3 +17,9 @@ function getNewsById($db, $id) {
     $stmt->execute(array($id));
     return $stmt->fetch();
 }
+
+function updateNews($db, $id, $title, $introduction, $body) {
+    $stmt = $db->prepare('UPDATE news SET title = ?, introduction = ?, fulltext = ? WHERE id = ?');
+    $stmt->execute(array($title, $introduction, $body, $id));
+}
+?>

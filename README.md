@@ -46,8 +46,7 @@ Each folder inside `exercicios/` corresponds to a lab session or weekly assignme
 | 02 | Understanding HTML as a semantic language | HTML5 | ✅ Done |
 | 03 | Using HTML to structure and CSS to style | CSS3 | ✅ Done |
 | 04 & 05 | Use of CSS to style HTML documents | CSS3 | ✅ Done |
-| 06 | Creating dynamic web pages with PHP | PHP | 🔄 In Progress |
-| 07 | Creating dynamic web pages with PHP | PHP | ⏳ Pending |
+| 06 & 07 | Creating dynamic web pages with PHP | PHP | 🔄 In Progress |
 | 09 | Creating dynamic web pages with JavaScript | JS | ⏳ Pending |
 | 12 | Learning how to secure web applications. | PHP | ⏳ Pending |
 
