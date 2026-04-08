@@ -21,8 +21,13 @@ function output_header()
             <h1><a href="index.php">Super Legit News</a></h1>
             <h2><a href="index.php">Where fake news are born!</a></h2>
             <div id="signup">
-                <a href="../html/register.html">Register</a>
-                <a href="../html/login.html">Login</a>
+                <?php if (isset($_SESSION['username'])): ?>
+                    <span><?php echo htmlspecialchars($_SESSION['username']); ?></span>
+                    <a href="action_logout.php">Logout</a>
+                <?php else: ?>
+                    <a href="../html/register.html">Register</a>
+                    <a href="login.php">Login</a>
+                <?php endif; ?>
             </div>
         </header>
 

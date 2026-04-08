@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once('database/connection.php');
     require_once('database/news.php');
     require_once('database/comments.php');

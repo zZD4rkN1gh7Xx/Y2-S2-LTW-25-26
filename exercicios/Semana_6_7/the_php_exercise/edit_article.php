@@ -1,12 +1,16 @@
 <?php
-  require_once('database/connection.php');
-  require_once('database/news.php');
-  require_once('templates/common.php');
+    session_start();
+    if (!isset($_SESSION['username']))
+        header('Location: index.php');
 
-  $db = getDatabaseConnection();
-  $article = getNewsById($db, $_GET['id']);
+    require_once('database/connection.php');
+    require_once('database/news.php');
+    require_once('templates/common.php');
 
-  output_header();
+    $db = getDatabaseConnection();
+    $article = getNewsById($db, $_GET['id']);
+
+    output_header();
 ?>
 
 <section id="news">

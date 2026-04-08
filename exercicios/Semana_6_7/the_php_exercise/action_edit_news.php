@@ -1,16 +1,19 @@
 <?php
-   
-  require_once('database/connection.php');
-  require_once('database/news.php');
+    session_start();
+    if (!isset($_SESSION['username']))
+        header('Location: index.php');
 
-  $db = getDatabaseConnection();
+    require_once('database/connection.php');
+    require_once('database/news.php');
 
-  $id = $_POST['id'];
-  $title = $_POST['title'];
-  $introduction = $_POST['introduction'];
-  $body = $_POST['fulltext'];
+    $db = getDatabaseConnection();
 
-  updateNews($db, $id, $title, $introduction, $body);
+    $id = $_POST['id'];
+    $title = $_POST['title'];
+    $introduction = $_POST['introduction'];
+    $body = $_POST['fulltext'];
 
-  header('Location: article.php?id=' . $id);
+    updateNews($db, $id, $title, $introduction, $body);
+
+    header('Location: article.php?id=' . $id);
 ?>
