@@ -13,6 +13,9 @@
 <?php function output_article_list($articles)
 { ?>
     <section id="news">
+        <?php if (isset($_SESSION['username'])): ?>
+            <a href="insert_article.php">New Article</a>
+        <?php endif; ?>
         <?php foreach ($articles as $article) output_article($article); ?>
     </section>
 <?php } ?>
@@ -37,6 +40,12 @@
             </span>
             <span class="date"><?php echo $date; ?></span>
             <a class="comments" href="article.php?id=<?php echo $article['id']; ?>#comments"><?php echo $article['comments']; ?></a>
+            <?php if (isset($_SESSION['username'])): ?>
+                <form action="action_delete_news.php" method="post">
+                    <input type="hidden" name="id" value="<?php echo $article['id']; ?>">
+                    <button type="submit">Delete</button>
+                </form>
+            <?php endif; ?>
         </footer>
     </article>
 <?php } ?>
@@ -69,5 +78,23 @@
                 <a class="comments" href="#comments"><?php echo count($comments); ?></a>
             </footer>
         </article>
+    </section>
+<?php } ?>
+
+<?php function output_article_form($article = null)
+{ ?>
+    <section id="news">
+        <form action="action_insert_news.php" method="post">
+            <label>Title
+                <input type="text" name="title">
+            </label>
+            <label>Introduction
+                <textarea name="introduction"></textarea>
+            </label>
+            <label>Full Text
+                <textarea name="fulltext"></textarea>
+            </label>
+            <button type="submit">Publish</button>
+        </form>
     </section>
 <?php } ?>

@@ -22,4 +22,19 @@ function updateNews($db, $id, $title, $introduction, $body) {
     $stmt = $db->prepare('UPDATE news SET title = ?, introduction = ?, fulltext = ? WHERE id = ?');
     $stmt->execute(array($title, $introduction, $body, $id));
 }
+
+function insertNews($db, $title, $introduction, $fulltext, $username) {
+    $stmt = $db->prepare('INSERT INTO news VALUES (NULL, ?, ?, ?, ?, ?, ?)');
+    $stmt->execute(array($title, time(), '', $username, $introduction, $fulltext));
+}
+
+function deleteNews($db, $id) {
+    // delete comments -- avoid foreign key things
+    $stmt = $db->prepare('DELETE FROM comments WHERE news_id = ?');
+    $stmt->execute(array($id));
+
+    // delete article
+    $stmt = $db->prepare('DELETE FROM news WHERE id = ?');
+    $stmt->execute(array($id));
+}
 ?>
