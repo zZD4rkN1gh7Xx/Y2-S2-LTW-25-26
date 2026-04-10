@@ -1,4 +1,4 @@
-<?php function output_comments($comments)
+<?php function output_comments($comments, $news_id)
 { ?>
     <section id="comments">
         <h1><?php echo count($comments); ?> Comments</h1>
@@ -10,18 +10,15 @@
             </article>
         <?php endforeach; ?>
         
-        <form action="#" method="post">
-            <h2>Add your voice...</h2>
-            <label>Username
-                <input type="text" name="username">
-            </label>
-            <label>E-mail
-                <input type="email" name="email">
-            </label>
-            <label>Comment
-                <textarea name="comment"></textarea>
-            </label>
-            <button type="submit">Reply</button>
-        </form>
+        <?php if (isset($_SESSION['username'])): ?>
+            <form action="action_insert_comment.php" method="post">
+                <input type="hidden" name="news_id" value="<?php echo $news_id; ?>">
+                <h2>Add your voice...</h2>
+                <label>Comment
+                    <textarea name="comment"></textarea>
+                </label>
+                <button type="submit">Reply</button>
+            </form>
+        <?php endif; ?>
     </section>
 <?php } ?>

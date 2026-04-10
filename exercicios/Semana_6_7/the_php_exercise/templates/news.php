@@ -66,7 +66,7 @@
             <?php endif; ?>
             <p><?php echo htmlspecialchars($article['introduction']); ?></p>
             <p><?php echo htmlspecialchars($article['body']); ?></p>
-            <?php output_comments($comments); ?>
+            <?php output_comments($comments,$article['id']); ?>
             <footer>
                 <span class="author"><?php echo htmlspecialchars($article['name']); ?></span>
                 <span class="tags">
