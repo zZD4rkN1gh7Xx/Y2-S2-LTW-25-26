@@ -23,7 +23,7 @@ body {
   margin: 0;
 }
 
-#products article .sale {
+#products article.sale {
   background-color: #ffddd2;
 }
 
