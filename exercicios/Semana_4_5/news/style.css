@@ -173,10 +173,7 @@ img {
 
 #news p:first-of-type::first-letter {
   font-size: 2em;
-  font-weight:500;
-  float: left;
-  line-height: 1;
-  margin-right: 4px;
+  line-height: 1em;
 }
 
 section footer
